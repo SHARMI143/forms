@@ -1,0 +1,101 @@
+nav{
+	font-size: 2rem;
+	background-color: #f1f1f1;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+nav ul li{
+	padding: 0.5rem;
+	/*flex: auto;*/
+	text-align: center;
+}
+nav ul li:hover{
+	cursor: pointer;
+	background-color: #555;
+	color: white;
+}
+@media (min-width: 1200px) {
+	nav ul{
+		flex-direction: row;
+	}
+	nav ul li{
+		text-align: center;
+	}
+}
+@media(max-width: 1199px) {
+	nav ul{
+		flex-direction: row;
+	}
+	nav ul li{
+		text-align: center;
+	}
+}
+@media (max-width: 991px) {
+	nav ul{
+		flex-direction: row;
+	}
+	nav ul li{
+		text-align: center;
+	}
+}
+@media (max-width: 767px) {
+	nav ul{
+		flex-direction: column;
+	}
+	nav ul li{
+		text-align: center;
+	}
+	.gridcontainer{
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr;
+		grid-template-areas: "sidebar"
+							"main"
+							"content1"
+							"content2"
+							"footer";
+	}
+}
+@media (max-width: 479px) {
+	nav ul{
+		flex-direction: column;
+	}
+	nav ul li{
+		text-align: center;
+	}
+}
+.gridcontainer{
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: .2fr 1.5fr 1.2fr;
+	margin-top: 20px;
+	grid-template-areas: "sidebar main main"
+						"sidebar content1 content2"
+						"sidebar footer footer";
+	grid-gap: 0.2rem;
+}
+main{
+	background-color: blue;
+	grid-area: main;
+}
+#sidebar{
+	background-color: skyblue;
+	grid-area: sidebar;
+}
+#content1{
+	background-color: red;
+	grid-area: content1;
+}
+#content2{
+	background-color: orange;
+	grid-area: content2;
+}
+#footer{
+	background-color: yellow;
+	grid-area: footer;
+}

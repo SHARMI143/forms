@@ -1,0 +1,18 @@
+.far{
+  font-style: normal;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+}
+
+.fa-circle:before{
+  content: "\f111"; 
+}
+
+@font-face{
+  font-family: 'Font Awesome 5 Free';
+  src: url("../images/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../images/fa-regular-400.woff2") format("woff2"), url("../images/fa-regular-400.woff") format("woff"), url("../images/fa-regular-400.ttf") format("truetype"), url("../images/fa-regular-400.svg#fontawesome") format("svg"); 
+}
+
+
+
